@@ -13,17 +13,17 @@ CILKFLAGS = -DCILK -fcilkplus
 PBBFLAGS = -DPARLAY_OPENMP -fopenmp -pthread
 
 ifdef OPENMP
-CC = g++
+CC = gclang++
 CFLAGS = $(OMPFLAGS) $(CCFLAGS)
 LFLAGS = $(OMPFLAGS) $(LCFLAGS)
 
 else ifdef CILK
-CC = g++
+CC = gclang++
 CFLAGS = $(CILKFLAGS) $(CCFLAGS)
 LFLAGS = $(CILKFLAGS) $(CLFLAGS)
 
 else
-CC = g++
+CC = gclang++
 CFLAGS = $(PBBFLAGS) $(CCFLAGS)
 LFLAGS = $(PBBFLAGS) $(CLFLAGS)
 endif
