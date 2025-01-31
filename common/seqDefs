@@ -8,6 +8,6 @@ endif
 CCFLAGS = -mcx16 -DPARLAY_SEQUENTIAL -O3 -std=c++17 -DNDEBUG
 CLFLAGS = $(JEMALLOC)
 
-CC = gwllvm++
+CC = wllvm++
 CFLAGS = $(CCFLAGS)
 LFLAGS = $(CLFLAGS)
