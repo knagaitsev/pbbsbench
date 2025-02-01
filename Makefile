@@ -3,7 +3,9 @@ DEFAULT_BENCHMARKS = integerSort/parallelRadixSort comparisonSort/sampleSort com
 
 EXT_BENCHMARKS = comparisonSort/quickSort comparisonSort/mergeSort comparisonSort/stableSampleSort removeDuplicates/serial_sort suffixArray/parallelKS spanningForest/incrementalST breadthFirstSearch/simpleBFS breadthFirstSearch/deterministicBFS maximalIndependentSet/incrementalMIS 
 
-ALL_BENCHMARKS = $(DEFAULT_BENCHMARKS) $(EXT_BENCHMARKS)
+SERIAL_VLG_BENCHMARKS = convexHull/serialHull delaunayTriangulation/incrementalDelaunay maximalIndependentSet/serialMIS nBody/parallelCK spanningForest/serialST
+
+ALL_BENCHMARKS = SERIAL_VLG_BENCHMARKS # $(DEFAULT_BENCHMARKS) $(EXT_BENCHMARKS)
 
 DATA_GENERATORS = sequenceData graphData geometryData
 
