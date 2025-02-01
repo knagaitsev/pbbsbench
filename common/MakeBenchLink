@@ -21,7 +21,7 @@ $(BENCH) : $(TIME).o $(OBJS) $(CHECK) testInputs
 # Timing Code
 $(TIME).o : ../bench/$(TIME).C 
 	$(CC) $(CFLAGS) $(INCLUDE) -o $@ -c ../bench/$(TIME).C
-	
+
 # The check code
 $(CHECK) : $(CHECK).C
 	cd ../bench; make -s $(BENCH)Check
