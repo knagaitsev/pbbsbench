@@ -11,7 +11,7 @@ DATA_GENERATORS = sequenceData graphData geometryData
 
 all : $(SERIAL_VLG_BENCHMARKS) # $(DEFAULT_BENCHMARKS)
 
-ext : $(ALL_BENCHMARKS)
+ext : $(SERIAL_VLG_BENCHMARKS)
 
 $(SERIAL_VLG_BENCHMARKS) : FORCE
 	cd benchmarks/$@; make
