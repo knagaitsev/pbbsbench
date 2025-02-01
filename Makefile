@@ -5,11 +5,11 @@ EXT_BENCHMARKS = comparisonSort/quickSort comparisonSort/mergeSort comparisonSor
 
 SERIAL_VLG_BENCHMARKS = convexHull/serialHull delaunayTriangulation/incrementalDelaunay maximalIndependentSet/serialMIS nBody/parallelCK spanningForest/serialST
 
-ALL_BENCHMARKS = SERIAL_VLG_BENCHMARKS # $(DEFAULT_BENCHMARKS) $(EXT_BENCHMARKS)
+ALL_BENCHMARKS = $(DEFAULT_BENCHMARKS) $(EXT_BENCHMARKS)
 
 DATA_GENERATORS = sequenceData graphData geometryData
 
-all : $(DEFAULT_BENCHMARKS)
+all : SERIAL_VLG_BENCHMARKS # $(DEFAULT_BENCHMARKS)
 
 ext : $(ALL_BENCHMARKS)
 
