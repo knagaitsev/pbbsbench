@@ -19,8 +19,8 @@ $(SERIAL_VLG_BENCHMARKS) : FORCE
 # $(DEFAULT_BENCHMARKS) : FORCE
 # 	cd benchmarks/$@; make
 
-$(EXT_BENCHMARKS) : FORCE
-	cd benchmarks/$@; make
+# $(EXT_BENCHMARKS) : FORCE
+# 	cd benchmarks/$@; make
 
 $(DATA_GENERATORS) : FORCE
 	cd testData/$@; make -j -s
